@@ -82,9 +82,9 @@ h1 span { color: var(--red); text-shadow: 5px 5px 0 rgba(255,255,255,.08); }
 .button-ghost { border-color: rgba(255,255,255,.35); background: transparent; color: white; }
 .hero-note { margin: 22px 0 0; color: #858589; font-size: 12px; }
 .hero-character { position: relative; z-index: 1; align-self: end; height: 770px; }
-.character-frame { position: absolute; inset: 80px -28% 0 -5%; overflow: hidden; filter: contrast(1.06) saturate(.84); }
+.character-frame { position: absolute; inset: 80px -12% 0 -10%; overflow: hidden; filter: contrast(1.06) saturate(.9); }
 .character-frame::after { content: ""; position: absolute; inset: 0; box-shadow: inset 150px 0 120px #101012, inset 0 -160px 100px #0b0b0c; }
-.character-frame img { width: 310%; height: 100%; object-fit: cover; object-position: left center; }
+.character-frame img { width: 100%; height: 100%; object-fit: cover; object-position: center; }
 .speech-bubble { position: absolute; z-index: 3; top: 170px; left: -40px; padding: 17px 22px; background: white; color: black; font-size: 14px; font-weight: 800; line-height: 1.55; transform: rotate(-2deg); }
 .speech-bubble::after { content: ""; position: absolute; right: 25px; bottom: -16px; border: 9px solid transparent; border-top-color: white; }
 .scroll-cue { position: absolute; z-index: 4; right: 36px; bottom: 30px; display: flex; gap: 14px; align-items: center; text-decoration: none; writing-mode: vertical-rl; font-size: 9px; letter-spacing: .24em; }
@@ -109,6 +109,7 @@ h1 span { color: var(--red); text-shadow: 5px 5px 0 rgba(255,255,255,.08); }
 .comparison figure span { position: absolute; z-index: 2; top: 18px; left: 18px; padding: 5px 10px; background: rgba(0,0,0,.82); color: white; font-size: 10px; font-weight: 900; letter-spacing: .18em; }
 .comparison figure:last-child span { background: var(--red); }
 .comparison img { height: 100%; object-fit: cover; }
+.comparison img.donut-result { object-position: center top; }
 .transform-arrow { position: absolute; z-index: 3; top: 50%; left: 50%; display: grid; width: 54px; height: 54px; transform: translate(-50%,-50%); place-items: center; border: 5px solid var(--black); background: white; color: black; font-size: 25px; font-weight: 900; }
 .example-caption { display: grid; grid-template-columns: 60px auto 1fr; gap: 18px; align-items: baseline; padding-top: 18px; }
 .example-caption b { color: var(--red); font-size: 12px; }
@@ -144,9 +145,9 @@ details p { max-width: 820px; padding: 0 0 25px; margin: 0; color: #66635d; font
 .closing { position: relative; min-height: 630px; overflow: hidden; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 80px max(20px, calc((100vw - var(--max))/2)); background: #09090a; }
 .closing-copy { position: relative; z-index: 2; }
 .closing h2 { margin-bottom: 35px; font-size: clamp(48px, 6vw, 80px); }
-.closing-image { position: absolute; inset: 0 0 0 42%; overflow: hidden; }
+.closing-image { position: absolute; inset: 0 0 0 38%; overflow: hidden; }
 .closing-image::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, #09090a 0%, transparent 60%), linear-gradient(0deg, #09090a, transparent 45%); }
-.closing-image img { width: 135%; height: 100%; object-fit: cover; object-position: left center; filter: grayscale(.3) contrast(1.2); }
+.closing-image img { width: 100%; height: 100%; object-fit: cover; object-position: center; filter: contrast(1.08); }
 footer { display: grid; grid-template-columns: 1fr 2fr; gap: 30px; padding: 36px max(20px, calc((100vw - var(--max))/2)); border-top: 1px solid var(--line); background: #09090a; color: #77777b; font-size: 10px; }
 footer p { margin: 0; }
 footer p:first-child { color: white; font-weight: 900; letter-spacing: .15em; }
@@ -155,7 +156,7 @@ footer p:first-child { color: white; font-weight: 900; letter-spacing: .15em; }
   .hero { min-height: 980px; grid-template-columns: 1fr; align-items: start; }
   .hero-copy { margin: 0 20px; padding-top: 135px; }
   .hero-character { position: absolute; right: 0; bottom: 0; width: 100%; height: 480px; opacity: .62; }
-  .character-frame { inset: 0 -28% 0 5%; }
+  .character-frame { inset: 0 -20% 0 -10%; }
   .character-frame::after { box-shadow: inset 80px 0 80px #0f0f11, inset 0 -90px 70px #0b0b0c, inset 0 100px 80px #101012; }
   .speech-bubble { top: 40px; left: 20px; }
   .hero-copy { z-index: 3; }
