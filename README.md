@@ -14,6 +14,14 @@ python3 -m http.server 4173
 
 GitHub Pages向けの静的サイトです。公開リポジトリの `main` ブランチ直下をPagesの配信元に設定してください。
 
+## アクセス解析
+
+Google Analytics 4を使用しています。
+
+- 測定ID: `G-3P6YKB0XW5`
+- 自動計測: ページビュー、スクロール、離脱クリックなど
+- 独自イベント: プロンプト全文のコピー成功時に`prompt_copy`
+
 ## 素材
 
 - `assets/character.jpg`: 案内役キャラクター

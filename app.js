@@ -33,6 +33,10 @@ copyButton?.addEventListener("click", async () => {
     label.textContent = "コピーしました";
     copyStatus.textContent = "画像生成AIへ、そのまま貼り付けてください。";
     copyButton.classList.add("is-copied");
+    window.gtag?.("event", "prompt_copy", {
+      event_category: "engagement",
+      event_label: "full_prompt",
+    });
   } catch {
     label.textContent = "コピーできませんでした";
     copyStatus.textContent = "コード欄を選択して手動でコピーしてください。";
